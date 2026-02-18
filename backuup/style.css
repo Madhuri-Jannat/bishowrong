@@ -1,0 +1,31 @@
+.main-header {
+  background: url("banner.jpg") center/cover no-repeat;
+  height: 120px;
+}
+
+.logo {
+  height: 60px;
+}
+
+.navbar-nav .nav-link {
+  color: white;
+  font-weight: 600;
+  margin: 0 10px;
+}
+
+.navbar-nav .nav-link:hover {
+  color: orange;
+}
+
+.top-icons i {
+  color: white;
+  font-size: 18px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.phone {
+  color: white;
+  font-weight: 600;
+  margin-right: 15px;
+}
