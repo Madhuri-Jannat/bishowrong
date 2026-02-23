@@ -9,7 +9,23 @@
   <link rel="stylesheet" href="./css/bootstrap.min.css">
   <link rel="stylesheet" href="style.css">
 
-  
+  <style>
+    .brands-section {
+      padding: 40px 0;
+      background-color: #f5f5f5;
+    }
+
+    .brand-card {
+      padding: 20px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(100, 90, 90, 0.1);
+    }
+
+    .brand-card iframe {
+      border-radius: 8px;
+    }
+  </style>
 
 </head>
 
@@ -18,117 +34,119 @@
   <!-- mneu bar -->
 
   <!-- First Navbar -->
-<header class="sticky-top">
-  <nav class="navbar navbar-expand-lg bg-transparent navbar-light d-flex align-items-center d-lg-block d-sm-none d-none">
-    <div class="container-fluid  ">
-      <div class="col-md-12 d-flex justify-content-between flex-row align-items-center">
-        <div class="menu col-md-5 ms-5 ps-5">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link text-white text-uppercase active" href="#">bishawrong</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white text-uppercase" href="#">sraddha</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white text-uppercase" href="#">Br Code</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white text-uppercase" href="#">biye barir golpo</a>
-            </li>
-          </ul>
-        </div>
-        <div class="contact col-md-6">
-          <ul class="navbar-nav justify-content-end">
-            <li class="nav-item">
-              <a class="nav-link text-white text-uppercase" href="#">
-                <i class="bi bi-telephone"></i> 01730068036
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white text-uppercase" href="#">
-                <i class="bi bi-geo-alt"></i>Our Outlets
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-  </nav>
-  <nav class="navbar navbar-expand-lg bg-transparent text-white navbar-light d-flex align-items-center ">
-    <div class=" text-white container-fluid">
-      <div class="col-md-12 align-items-center d-flex justify-content-sm-between w-100 justify-content-between">
-
-        <div class="logo col-md-1">
-          <a class="navbar-brand" href="index.html">
-            <img src="./img/logo/bride.webp" width="60" height="55" alt="">
-          </a>
-        </div>
-        <div class="menu-bar col-md-7 d-flex justify-content-end align-items-center">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-between align-items-center mt-5 " id="collapsibleNavbar">
-            <ul class="navbar-nav justify-content-end  w-100">
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle text-uppercase text-white" href="#" role="button"
-                  data-bs-toggle="dropdown">men</a>
-                <ul class="dropdown-menu w-100">
-                  <li><a class="dropdown-item  text-uppercase text-black" href="#">shirt</a></li>
-                  <li><a class="dropdown-item  text-uppercase text-black" href="#">jeans</a></li>
-                  <li><a class="dropdown-item  text-uppercase text-black" href="#">t-shirt</a></li>
-                </ul>
+  <header class="sticky-top">
+    <nav
+      class="navbar navbar-expand-lg bg-transparent navbar-light d-flex align-items-center d-lg-block d-sm-none d-none">
+      <div class="container-fluid  ">
+        <div class="col-md-12 d-flex justify-content-between flex-row align-items-center">
+          <div class="menu col-md-5 ms-5 ps-5">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link text-white text-uppercase active" href="#">bishawrong</a>
               </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle text-uppercase text-white" href="#" role="button"
-                  data-bs-toggle="dropdown">women</a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item  text-uppercase text-black" href="#">borkha</a></li>
-                  <li><a class="dropdown-item  text-uppercase text-black" href="#">three pices</a></li>
-                  <li><a class="dropdown-item  text-uppercase text-black" href="#">tops</a></li>
-                </ul>
+              <li class="nav-item">
+                <a class="nav-link text-white text-uppercase" href="#">sraddha</a>
               </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle text-uppercase text-white" href="#" role="button"
-                  data-bs-toggle="dropdown">kids</a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item  text-uppercase text-black" href="#">jeans</a></li>
-                  <li><a class="dropdown-item  text-uppercase text-black" href="#">shoes</a></li>
-                  <li><a class="dropdown-item  text-uppercase text-black" href="#">pant</a></li>
-                </ul>
+              <li class="nav-item">
+                <a class="nav-link text-white text-uppercase" href="#">Br Code</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white text-uppercase" href="#">biye barir golpo</a>
+              </li>
+            </ul>
+          </div>
+          <div class="contact col-md-6">
+            <ul class="navbar-nav justify-content-end">
+              <li class="nav-item">
+                <a class="nav-link text-white text-uppercase" href="#">
+                  <i class="bi bi-telephone"></i> 01730068036
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white text-uppercase" href="#">
+                  <i class="bi bi-geo-alt"></i>Our Outlets
+                </a>
               </li>
             </ul>
           </div>
         </div>
-        <div class="icons col-md-4 mt-4 d-flex justify-content-end d-sm-none d-lg-flex d-none">
-          <ul class="navbar-nav text-white">
-            <li class="nav-item">
-              <a class="nav-link text-white text-uppercase active" href="#">
-                <i class="bi bi-search"></i>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white text-uppercase" href="#">
-                <i class="bi bi-heart"></i>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white text-uppercase" href="#">
-                <i class="bi bi-bag"></i>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white text-uppercase" href="#">
-                <i class="bi bi-person"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
       </div>
 
-  </nav>
-</header>
+    </nav>
+    <nav class="navbar navbar-expand-lg bg-transparent text-white navbar-light d-flex align-items-center ">
+      <div class=" text-white container-fluid">
+        <div class="col-md-12 align-items-center d-flex justify-content-sm-between w-100 justify-content-between">
+
+          <div class="logo col-md-1">
+            <a class="navbar-brand" href="index.html">
+              <img src="./img/logo/bride.webp" width="60" height="55" alt="">
+            </a>
+          </div>
+          <div class="menu-bar col-md-7 d-flex justify-content-end align-items-center">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between align-items-center mt-5 "
+              id="collapsibleNavbar">
+              <ul class="navbar-nav justify-content-end  w-100">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle text-uppercase text-white" href="#" role="button"
+                    data-bs-toggle="dropdown">men</a>
+                  <ul class="dropdown-menu w-100">
+                    <li><a class="dropdown-item  text-uppercase text-black" href="#">shirt</a></li>
+                    <li><a class="dropdown-item  text-uppercase text-black" href="#">jeans</a></li>
+                    <li><a class="dropdown-item  text-uppercase text-black" href="#">t-shirt</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle text-uppercase text-white" href="#" role="button"
+                    data-bs-toggle="dropdown">women</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item  text-uppercase text-black" href="#">borkha</a></li>
+                    <li><a class="dropdown-item  text-uppercase text-black" href="#">three pices</a></li>
+                    <li><a class="dropdown-item  text-uppercase text-black" href="#">tops</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle text-uppercase text-white" href="#" role="button"
+                    data-bs-toggle="dropdown">kids</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item  text-uppercase text-black" href="#">jeans</a></li>
+                    <li><a class="dropdown-item  text-uppercase text-black" href="#">shoes</a></li>
+                    <li><a class="dropdown-item  text-uppercase text-black" href="#">pant</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="icons col-md-4 mt-4 d-flex justify-content-end d-sm-none d-lg-flex d-none">
+            <ul class="navbar-nav text-white">
+              <li class="nav-item">
+                <a class="nav-link text-white text-uppercase active" href="#">
+                  <i class="bi bi-search"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white text-uppercase" href="#">
+                  <i class="bi bi-heart"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white text-uppercase" href="#">
+                  <i class="bi bi-bag"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white text-uppercase" href="#">
+                  <i class="bi bi-person"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+    </nav>
+  </header>
 
   <!-- slider  -->
 
@@ -373,7 +391,7 @@
         <div class="col-md-12">
           <h2 class="card-title text-uppercase mt-5 mb-5 text-center">our brands</h2>
 
-                             <div id="brandsSlider" class="carousel slide">
+          <div id="brandsSlider" class="carousel slide">
             <div class="carousel-inner">
               <!-- Slide 1 -->
               <div class="carousel-item active" data-bs-interval="5000">
@@ -381,43 +399,67 @@
                   <div class="col-md-4 d-flex justify-content-center">
                     <div class="brand-card text-center">
                       <img src="./img/logo/bride.webp" width="120" height="120" class="img-fluid mb-3" alt="Brand 1">
-                      <iframe width="560" height="315" src="https://www.youtube.com/embed/y10g604zQG8?si=o59E5vfFnCcAMHaL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                      <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/y10g604zQG8?si=o59E5vfFnCcAMHaL" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
                   </div>
                   <div class="col-md-4 d-flex justify-content-center">
                     <div class="brand-card text-center">
                       <img src="./img/logo/bride.webp" width="120" height="120" class="img-fluid mb-3" alt="Brand 2">
-                      <iframe width="560" height="315" src="https://www.youtube.com/embed/y10g604zQG8?si=o59E5vfFnCcAMHaL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                      <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/y10g604zQG8?si=o59E5vfFnCcAMHaL" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
                   </div>
                   <div class="col-md-4 d-flex justify-content-center">
                     <div class="brand-card text-center">
                       <img src="./img/logo/bride.webp" width="120" height="120" class="img-fluid mb-3" alt="Brand 3">
-                      <iframe width="560" height="315" src="https://www.youtube.com/embed/y10g604zQG8?si=o59E5vfFnCcAMHaL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                      <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/y10g604zQG8?si=o59E5vfFnCcAMHaL" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
                   </div>
                 </div>
               </div>
 
-                            <!-- Slide 2 -->
+              <!-- Slide 2 -->
               <div class="carousel-item" data-bs-interval="5000">
                 <div class="row g-4">
                   <div class="col-md-4 d-flex justify-content-center">
                     <div class="brand-card text-center">
                       <img src="./img/logo/bride.webp" width="120" height="120" class="img-fluid mb-3" alt="Brand 4">
-                      <iframe width="100%" height="300" src="https://www.youtube.com/embed/y10g604zQG8?si=o59E5vfFnCcAMHaL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                      <iframe width="100%" height="300"
+                        src="https://www.youtube.com/embed/y10g604zQG8?si=o59E5vfFnCcAMHaL" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
                   </div>
                   <div class="col-md-4 d-flex justify-content-center">
                     <div class="brand-card text-center">
                       <img src="./img/logo/bride.webp" width="120" height="120" class="img-fluid mb-3" alt="Brand 5">
-                      <iframe width="100%" height="300" src="https://www.youtube.com/embed/y10g604zQG8?si=o59E5vfFnCcAMHaL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                      <iframe width="100%" height="300"
+                        src="https://www.youtube.com/embed/y10g604zQG8?si=o59E5vfFnCcAMHaL" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
                   </div>
                   <div class="col-md-4 d-flex justify-content-center">
                     <div class="brand-card text-center">
                       <img src="./img/logo/bride.webp" width="120" height="120" class="img-fluid mb-3" alt="Brand 6">
-                      <iframe width="100%" height="300" src="https://www.youtube.com/embed/y10g604zQG8?si=o59E5vfFnCcAMHaL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                      <iframe width="100%" height="300"
+                        src="https://www.youtube.com/embed/y10g604zQG8?si=o59E5vfFnCcAMHaL" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
                   </div>
                 </div>
@@ -429,25 +471,37 @@
                   <div class="col-md-4 d-flex justify-content-center">
                     <div class="brand-card text-center">
                       <img src="./img/logo/bride.webp" width="120" height="120" class="img-fluid mb-3" alt="Brand 7">
-                      <iframe width="100%" height="300" src="https://www.youtube.com/embed/y10g604zQG8?si=o59E5vfFnCcAMHaL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                      <iframe width="100%" height="300"
+                        src="https://www.youtube.com/embed/y10g604zQG8?si=o59E5vfFnCcAMHaL" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
                   </div>
                   <div class="col-md-4 d-flex justify-content-center">
                     <div class="brand-card text-center">
                       <img src="./img/logo/bride.webp" width="120" height="120" class="img-fluid mb-3" alt="Brand 8">
-                      <iframe width="100%" height="300" src="https://www.youtube.com/embed/y10g604zQG8?si=o59E5vfFnCcAMHaL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                      <iframe width="100%" height="300"
+                        src="https://www.youtube.com/embed/y10g604zQG8?si=o59E5vfFnCcAMHaL" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
                   </div>
                   <div class="col-md-4 d-flex justify-content-center">
                     <div class="brand-card text-center">
                       <img src="./img/logo/bride.webp" width="120" height="120" class="img-fluid mb-3" alt="Brand 9">
-                      <iframe width="100%" height="300" src="https://www.youtube.com/embed/y10g604zQG8?si=o59E5vfFnCcAMHaL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                      <iframe width="100%" height="300"
+                        src="https://www.youtube.com/embed/y10g604zQG8?si=o59E5vfFnCcAMHaL" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            
+
             <button class="carousel-control-prev" type="button" data-bs-target="#brandsSlider" data-bs-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Previous</span>
@@ -461,25 +515,6 @@
           <div class="bu text-center mt-4 mb-5">
             <a href="#" type="button" class="btn btn-primary text-uppercase fw-bold">view all brands</a>
           </div>
-          <style>
-            .brands-section {
-              padding: 40px 0;
-              background-color: #f5f5f5;
-            }
-
-            .brand-card {
-              padding: 20px;
-              background: white;
-              border-radius: 8px;
-              box-shadow: 0 2px 8px rgba(100, 90, 90, 0.1);
-            }
-
-            .brand-card iframe {
-              border-radius: 8px;
-            }
-          </style>
-
-
           <div class="stories bg-dark overflow-hidden">
             <div class="container-fluid">
               <div class="row">
@@ -740,8 +775,8 @@
           }
 
 
-           // Initialize brands carousel with auto-slide
-          document.addEventListener('DOMContentLoaded', function() {
+          // Initialize brands carousel with auto-slide
+          document.addEventListener('DOMContentLoaded', function () {
             const brandsCarousel = document.getElementById('brandsSlider');
             if (brandsCarousel) {
               const carousel = new bootstrap.Carousel(brandsCarousel, {
