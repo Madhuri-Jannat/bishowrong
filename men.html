@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bishworang | Bishworang</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+  <style>
+    .footer-pragraph p strong {
+      color: #909090;
+    }
+
+    #myBtn {
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      right: 30px;
+      z-index: 99;
+      font-size: 18px;
+      border: none;
+      outline: none;
+      background-color: blue;
+      color: white;
+      cursor: pointer;
+      padding: 15px;
+      border-radius: 4px;
+      transition: 0.7s;
+    }
+
+    #myBtn:hover {
+      background-color: black;
+      color: #fff;
+    }
+
+    .first-carousel {
+      margin-top: -128px;
+    }
+
+    #navBar {
+      position: relative;
+      z-index: 9999;
+    }
+
+    img#image {
+      position: absolute;
+      width: 122px;
+      height: 126px;
+      object-fit: cover;
+      top: -61px;
+      border-radius: 0 0 8px 8px;
+      transition: 0.6s;
+    }
+
+    .resize {
+      width: 64px !important;
+      position: absolute !important;
+      top: 10px !important;
+      border-radius: 0 !important;
+      height: 40px !important;
+    }
+    .color{
+      color: #000 !important;
+    }
+    .bg-white{
+      background: #fff !important;
+    }
+   
+
+    @media screen and (max-width: 400px) {
+      .navbar-collapse {
+        flex-grow: 1;
+        flex-basis: 100%;
+        align-items: center;
+        position: absolute;
+        top: 64px;
+        background: #fff;
+        padding: 4px 10px;
+        right: 0;
+      }
+    }
+    /* Product listing styles */
+    .product-listing .product-card { border: 0; }
+    .product-img-wrap { overflow: hidden; position: relative; }
+    .product-img { width: 100%; height: 260px; object-fit: contain; display: block; transition: transform .45s ease; }
+    .product-card:hover .product-img { transform: scale(1.04); }
+    .add-cart { left: 50%; transform: translateX(-50%); bottom: 12px; display: none; }
+    .product-card:hover .add-cart { display: inline-block; }
+    .product-card .card-body { padding: .5rem .5rem .75rem; }
+    @media (max-width: 576px){ .product-img { height: 160px; } }
+    /* Filter accordion styles to match provided design */
+    .filter-accordion .accordion-item { border: 0; }
+    .filter-accordion .accordion-button {
+      background: #fff; color: #222; text-transform: uppercase; font-weight: 600;
+      padding: 1rem 1rem; border-top: 1px solid rgba(0,0,0,0.06);
+    }
+    .filter-accordion .accordion-button:not(.collapsed) { box-shadow: none; }
+    .filter-accordion .accordion-button::after { content: '+'; font-size: 18px; color: #666; transform: none; background-image: none !important; -webkit-mask-image: none !important; mask-image: none !important; width: auto; }
+    .filter-accordion .accordion-body { padding: .75rem 1rem 1rem; border-bottom: 1px solid rgba(0,0,0,0.06); }
+    .filter-card { box-shadow: none; border-radius: 0; }
+    @media (max-width: 992px) {
+      .filter-accordion .accordion-button { font-size: .95rem; }
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <!-- mneu bar -->
+
+  <nav id="navBar" class="navbar navbar-expand-lg bg-transparent d-flex align-items-center d-lg-block d-sm-none d-none">
+    <div class="container-fluid">
+      <div class="col-md-12 d-flex justify-content-between flex-row align-items-center">
+        <div class="menu col-md-5 ms-5 ps-5">
+          <ul class="navbar-nav ps-5">
+            <li class="nav-item">
+              <a class="nav-link text-white text-uppercase active" href="#">bishawrong</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white text-uppercase" href="#">sraddha</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white text-uppercase" href="#">Br Code</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white text-uppercase" href="#">biye barir golpo</a>
+            </li>
+          </ul>
+        </div>
+        <div class="contact col-md-6">
+          <ul class="navbar-nav justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link text-white text-uppercase" href="#">
+                <i class="bi bi-telephone"></i> 01730068036
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white text-uppercase" href="#">
+                <i class="bi bi-geo-alt"></i>Our Outlets
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </nav>
+  <nav id="stickyBar" class="navbar navbar-expand-lg bg-transparent d-flex align-items-center sticky-top">
+    <div class="container-fluid">
+      <div class="col-md-12 align-items-center d-flex justify-content-sm-between w-100 justify-content-between">
+
+        <div class="logo col-md-1">
+          <a class="navbar-brand" href="./index.html">
+            <img id="image" src="./img/logo/bride.webp" width="60" height="55" alt="">
+          </a>
+        </div>
+        <div class="menu-bar col-md-7 d-flex justify-content-end align-items-center">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav justify-content-end w-100">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-uppercase text-white nav-links-items" href="./men.html" role="button"
+                  data-bs-toggle="dropdown">men</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item  text-uppercase text-black" href="#">shirt</a></li>
+                  <li><a class="dropdown-item  text-uppercase text-black" href="#">jeans</a></li>
+                  <li><a class="dropdown-item  text-uppercase text-black" href="#">t-shirt</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-uppercase text-white nav-links-items" href="#" role="button"
+                  data-bs-toggle="dropdown">women</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item  text-uppercase text-black" href="#">borkha</a></li>
+                  <li><a class="dropdown-item  text-uppercase text-black" href="#">three pices</a></li>
+                  <li><a class="dropdown-item  text-uppercase text-black" href="#">tops</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-uppercase text-white nav-links-items" href="#" role="button"
+                  data-bs-toggle="dropdown">kids</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item  text-uppercase text-black" href="#">jeans</a></li>
+                  <li><a class="dropdown-item  text-uppercase text-black" href="#">shoes</a></li>
+                  <li><a class="dropdown-item  text-uppercase text-black" href="#">pant</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="icons col-md-4 d-flex justify-content-end d-sm-none d-lg-flex d-none">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link text-white text-uppercase active" href="#">
+                <i class="bi bi-search"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white text-uppercase" href="#">
+                <i class="bi bi-heart"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white text-uppercase" href="#">
+                <i class="bi bi-bag"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white text-uppercase" href="#">
+                <i class="bi bi-person"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+  </nav>
+
+
+
+  <!-- mens area here  -->
+  <section class="product-listing container-fluid mt-5">
+    <div class="container">
+      <div class="row">
+        <aside class="col-lg-3 d-none d-lg-block">
+          <div class="card filter-card">
+            <div class="accordion filter-accordion" id="filterAccordion">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                    Categories
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#filterAccordion">
+                  <div class="accordion-body">
+                    <ul class="list-unstyled mb-0">
+                      <li><a href="#" class="text-decoration-none text-dark">Shirt</a></li>
+                      <li><a href="#" class="text-decoration-none text-dark">Punjabi</a></li>
+                      <li><a href="#" class="text-decoration-none text-dark">Jeans</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Colors
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#filterAccordion">
+                  <div class="accordion-body">
+                    <div class="d-flex gap-2">
+                      <span style="width:24px;height:24px;background:#000;display:inline-block;border-radius:3px;border:1px solid #ddd;"></span>
+                      <span style="width:24px;height:24px;background:#0d6efd;display:inline-block;border-radius:3px;border:1px solid #ddd;"></span>
+                      <span style="width:24px;height:24px;background:#ffc107;display:inline-block;border-radius:3px;border:1px solid #ddd;"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Sort
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#filterAccordion">
+                  <div class="accordion-body">
+                    <select class="form-select form-select-sm">
+                      <option>Newest</option>
+                      <option>Price: Low to High</option>
+                      <option>Price: High to Low</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    Price Range
+                  </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#filterAccordion">
+                  <div class="accordion-body">
+                    <p class="mb-1">৳ 500 - ৳ 5000</p>
+                    <input type="range" class="form-range" min="0" max="10000">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </aside>
+        <div class="col-lg-9">
+          <!-- Mobile filters (visible on small screens) -->
+          <div class="d-lg-none mb-3">
+            <div class="card filter-card p-0">
+              <div class="accordion filter-accordion" id="mobileFilterAccordion">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="mHeadingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#mCollapseOne" aria-expanded="false" aria-controls="mCollapseOne">
+                      Categories
+                    </button>
+                  </h2>
+                  <div id="mCollapseOne" class="accordion-collapse collapse" aria-labelledby="mHeadingOne" data-bs-parent="#mobileFilterAccordion">
+                    <div class="accordion-body">
+                      <ul class="list-unstyled mb-0">
+                        <li><a href="#" class="text-decoration-none text-dark">Shirt</a></li>
+                        <li><a href="#" class="text-decoration-none text-dark">Punjabi</a></li>
+                        <li><a href="#" class="text-decoration-none text-dark">Jeans</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="mHeadingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#mCollapseTwo" aria-expanded="false" aria-controls="mCollapseTwo">
+                      Colors
+                    </button>
+                  </h2>
+                  <div id="mCollapseTwo" class="accordion-collapse collapse" aria-labelledby="mHeadingTwo" data-bs-parent="#mobileFilterAccordion">
+                    <div class="accordion-body">
+                      <div class="d-flex gap-2">
+                        <span style="width:24px;height:24px;background:#000;display:inline-block;border-radius:3px;border:1px solid #ddd;"></span>
+                        <span style="width:24px;height:24px;background:#0d6efd;display:inline-block;border-radius:3px;border:1px solid #ddd;"></span>
+                        <span style="width:24px;height:24px;background:#ffc107;display:inline-block;border-radius:3px;border:1px solid #ddd;"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="mHeadingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#mCollapseThree" aria-expanded="false" aria-controls="mCollapseThree">
+                      Price Range
+                    </button>
+                  </h2>
+                  <div id="mCollapseThree" class="accordion-collapse collapse" aria-labelledby="mHeadingThree" data-bs-parent="#mobileFilterAccordion">
+                    <div class="accordion-body">
+                      <p class="mb-1">৳ 500 - ৳ 5000</p>
+                      <input type="range" class="form-range" min="0" max="10000">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <div>
+              <h4 class="mb-0">Men</h4>
+              <small class="text-muted">Showing 1–12 of 120 results</small>
+            </div>
+            <div>
+              <button class="btn btn-outline-secondary btn-sm me-1">Grid</button>
+              <button class="btn btn-outline-secondary btn-sm">List</button>
+            </div>
+          </div>
+
+          <div class="row g-3">
+            <!-- 12 product cards (placeholder images reused) -->
+            <!-- Repeat block -->
+            
+            
+            <!-- begin products -->
+            
+            
+            
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="card product-card">
+                <div class="product-img-wrap">
+                  <img src="./img/one.webp" class="product-img" alt="Product">
+                  <button class="btn btn-warning add-cart position-absolute">Add to cart</button>
+                </div>
+                <div class="card-body">
+                  <h6 class="mb-1">Shirt</h6>
+                  <p class="mb-0 text-muted">৳ 1,990</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="card product-card">
+                <div class="product-img-wrap">
+                  <img src="./img/two.webp" class="product-img" alt="Product">
+                  <button class="btn btn-warning add-cart position-absolute">Add to cart</button>
+                </div>
+                <div class="card-body">
+                  <h6 class="mb-1">Shirt</h6>
+                  <p class="mb-0 text-muted">৳ 1,990</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- duplicate to get a full grid (use same placeholders) -->
+            
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="card product-card">
+                <div class="product-img-wrap">
+                  <img src="./img/three.webp" class="product-img" alt="Product">
+                  <button class="btn btn-warning add-cart position-absolute">Add to cart</button>
+                </div>
+                <div class="card-body">
+                  <h6 class="mb-1">Punjabi</h6>
+                  <p class="mb-0 text-muted">৳ 3,250</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="card product-card">
+                <div class="product-img-wrap">
+                  <img src="./img/four.webp" class="product-img" alt="Product">
+                  <button class="btn btn-warning add-cart position-absolute">Add to cart</button>
+                </div>
+                <div class="card-body">
+                  <h6 class="mb-1">Punjabi</h6>
+                  <p class="mb-0 text-muted">৳ 2,999</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="card product-card">
+                <div class="product-img-wrap">
+                  <img src="./img/five.webp" class="product-img" alt="Product">
+                  <button class="btn btn-warning add-cart position-absolute">Add to cart</button>
+                </div>
+                <div class="card-body">
+                  <h6 class="mb-1">Shirt</h6>
+                  <p class="mb-0 text-muted">৳ 900</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="card product-card">
+                <div class="product-img-wrap">
+                  <img src="./img/six.webp" class="product-img" alt="Product">
+                  <button class="btn btn-warning add-cart position-absolute">Add to cart</button>
+                </div>
+                <div class="card-body">
+                  <h6 class="mb-1">Shirt</h6>
+                  <p class="mb-0 text-muted">৳ 1,150</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="card product-card">
+                <div class="product-img-wrap">
+                  <img src="./img/seven.webp" class="product-img" alt="Product">
+                  <button class="btn btn-warning add-cart position-absolute">Add to cart</button>
+                </div>
+                <div class="card-body">
+                  <h6 class="mb-1">Punjabi</h6>
+                  <p class="mb-0 text-muted">৳ 2,500</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="card product-card">
+                <div class="product-img-wrap">
+                  <img src="./img/eight.webp" class="product-img" alt="Product">
+                  <button class="btn btn-warning add-cart position-absolute">Add to cart</button>
+                </div>
+                <div class="card-body">
+                  <h6 class="mb-1">Shirt</h6>
+                  <p class="mb-0 text-muted">৳ 1,200</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="card product-card">
+                <div class="product-img-wrap">
+                  <img src="./img/nine.webp" class="product-img" alt="Product">
+                  <button class="btn btn-warning add-cart position-absolute">Add to cart</button>
+                </div>
+                <div class="card-body">
+                  <h6 class="mb-1">Shirt</h6>
+                  <p class="mb-0 text-muted">৳ 1,050</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="card product-card">
+                <div class="product-img-wrap">
+                  <img src="./img/ten.webp" class="product-img" alt="Product">
+                  <button class="btn btn-warning add-cart position-absolute">Add to cart</button>
+                </div>
+                <div class="card-body">
+                  <h6 class="mb-1">Punjabi</h6>
+                  <p class="mb-0 text-muted">৳ 3,500</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- end products -->
+
+          </div>
+
+          <nav aria-label="Page navigation" class="mt-4">
+            <ul class="pagination justify-content-center">
+              <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+              <li class="page-item active"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+   <footer class="mt-5 mb-1">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12 p-0 flex-sm-column d-flex flex-column">
+          <div
+            class="top-wrapper d-flex justify-content-between align-items-center ps-3 pe-3 flex-sm-column flex-column flex-lg-row">
+            <div class="col-md-6 ps-3 pe-3">
+              <div class="footer-logo">
+                <img src="./img/logo/footer_logo.png" width="180" height="180" class="img-fluid" alt="">
+              </div>
+              <div class="footer-pragraph mt-3 mb-3">
+                <p class="fs-6"><strong>Bishworang</strong> is a leading fashion brand in Bangladesh, renowned for its
+                  vibrant designs and cultural essence. With a commitment to quality and creativity, we offer a diverse
+                  range of traditional and contemporary apparel for men, women, and kids. Our collections celebrate
+                  heritage while embracing modern fashion trends. Explore our sub-brands—<strong>BR Code, Biye Barir
+                    Golpo, Shraddha, Bishworang Kids, and Bishworang Jewellery</strong>—each crafted to meet unique
+                  style
+                  needs. Experience the essence of fashion with Bishworang!</p>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <h5 class="text-black text-capitalize fs-3">exclusive fashion updates await!</h5>
+              <p class="text-secondary fs-6">For all New Bishworang's Email Subscribers</p>
+              <div class="form-group d-flex justify-content-between align-itmes-center gap-2 mt-3 mb-3">
+                <input type="email" class="form-control" name="email" id="" placeholder="Enter Your Email">
+                <input type="button" class="btn btn-primary" value="SUBSCRIBE">
+              </div>
+              <div class="condition">
+                <ul>
+                  <li class="text-secondary fs-6">Send me news and offers from the Bishworang. I can
+                    <!-- --> <a class="text-decoration-none text-primary" href="javascript:void(0);">unsubscribe</a> at
+                    any time.</li>
+                  <li class="text-secondary fs-6"> I have read the Bishworang
+                    <!-- --> <a class="text-primary text-decoration-none" href="/page/privacy-policy">Privacy
+                      Policy</a>.
+                    Offer details, financial incentives and exclusions available here.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div
+            class="bottom-wrapper flex-sm-column mt-3 mb-3 border border-secondary-subtitle border-top border-bottom flex-column d-flex justify-content-between pt-3 pb-3  flex-lg-row">
+            <div class="col-md-2 categories border-end ps-3 border-bottom pt-4 pb-4">
+              <h3 class="text-uppercase text-black fs-6 p-0">
+                categories
+              </h3>
+              <ul class="nav flex-column text-left">
+                <li class="nav-items">
+                  <a class="nav-link link-secondary fs-6 p-0" href="#">Women</a>
+                </li>
+                <li class="nav-items">
+                  <a class="nav-link link-secondary fs-6 p-0" href="#">kids</a>
+                </li>
+                <li class="nav-items">
+                  <a class="nav-link link-secondary fs-6 p-0" href="#">men</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-2 customer border-end ps-3 border-bottom pt-4 pb-4">
+              <h3 class="text-uppercase text-black fs-6 p-0">
+                customer service
+              </h3>
+              <ul class="nav flex-column text-left">
+                <li class="nav-items">
+                  <a class="nav-link link-secondary fs-6 p-0" href="#">Seller Policy Pages</a>
+                </li>
+                <li class="nav-items">
+                  <a class="nav-link link-secondary fs-6 p-0" href="#">Shipping & Charges</a>
+                </li>
+                <li class="nav-items">
+                  <a class="nav-link link-secondary fs-6 p-0" href="#">Customer Service</a>
+                </li>
+                <li class="nav-items">
+                  <a class="nav-link link-secondary fs-6 p-0" href="#">FAQs</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-2 categories border-end ps-3 border-bottom pt-4 pb-4">
+              <h3 class="text-uppercase text-black fs-6 p-0">
+                who we are
+              </h3>
+              <ul class="nav flex-column text-left">
+                <li class="nav-items">
+                  <a class="nav-link link-secondary fs-6 p-0" href="#">Trade License</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-2 categories border-end ps-3 border-bottom pt-4 pb-4">
+              <h3 class="text-uppercase text-black fs-6 p-0">
+                more
+              </h3>
+              <ul class="nav flex-column text-left">
+                <li class="nav-items">
+                  <a class="nav-link link-secondary fs-6 p-0" href="#">Return and Exchange</a>
+                </li>
+                <li class="nav-items">
+                  <a class="nav-link link-secondary fs-6 p-0" href="#">Terms & Condition</a>
+                </li>
+                <li class="nav-items">
+                  <a class="nav-link link-secondary fs-6 p-0" href="#">Privacy Policy</a>
+                </li>
+                <li class="nav-items">
+                  <a class="nav-link link-secondary fs-6 p-0" href="#">About Us</a>
+                </li>
+                <li class="nav-items">
+                  <a class="nav-link link-secondary fs-6 p-0" href="#">Contact Us</a>
+                </li>
+                <li class="nav-items">
+                  <a class="nav-link link-secondary fs-6 p-0" href="#">Home to Shop</a>
+                </li>
+                <li class="nav-items">
+                  <a class="nav-link link-secondary fs-6 p-0" href="#">Delivery Policy</a>
+                </li>
+                <li class="nav-items">
+                  <a class="nav-link link-secondary fs-6 p-0" href="#">Find a Store</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-4 social ps-3 border-bottom pt-4 pb-4">
+              <h3 class="text-uppercase text-black fs-6 p-0">
+                follw us
+              </h3>
+              <ul class="nav text-left gap-3">
+                <li class="nav-items">
+                  <a class="icon-link icon-link-hover fs-4 icon-primary" href="#">
+                    <i class="bi bi-facebook"></i>
+                  </a>
+                </li>
+                <li class="nav-items">
+                  <a class="icon-link icon-link-hover fs-4 icon-primary" href="#">
+                    <i class="bi bi-instagram"></i>
+                  </a>
+                </li>
+                <li class="nav-items">
+                  <a class="icon-link icon-link-hover fs-4 icon-primary" href="#">
+                    <i class="bi bi-linkedin"></i>
+                  </a>
+                </li>
+                <li class="nav-items">
+                  <a class="icon-link icon-link-hover fs-4 icon-primary" href="#">
+                    <i class="bi bi-youtube"></i>
+                  </a>
+                </li>
+                <li class="nav-items">
+                  <a class="icon-link icon-link-hover fs-4 icon-primary" href="#">
+                    <i class="bi bi-whatsapp"></i>
+                  </a>
+                </li>
+                <li class="nav-items">
+                  <a class="icon-link icon-link-hover fs-4 icon-primary" href="#">
+                    <i class="bi bi-messenger"></i>
+                  </a>
+                </li>
+                <li class="nav-items">
+                  <a class="icon-link icon-link-hover fs-4 icon-primary" href="#">
+                    <i class="bi bi-twitter-x"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div
+            class="copy-write-wrapper d-flex justify-content-between align-items-center ps-2 pe-2 flex-sm-column flex-column flex-lg-row">
+            <p class="text-secondary fs-6 text-uppercase fw-6">copyright &copy;
+              <a class="link-primary text-decoration-none text-uppercase fs-6" href="#">bishworang.</a> all rights
+              reserved
+            </p>
+            <p class="text-secondary fs-6 text-uppercase fw-6">system design & developed by :
+              <a class="link-primary text-decoration-none text-uppercase fs-6 fs-sm-4" href="#">mediasoft data system
+                ltd</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="bi bi-caret-up"></i></button>
+  </footer>
+
+
+  <script>
+    // Get the button
+    let mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () {
+      scrollFunction()
+    };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+
+    // navbar logic 
+
+    const nav = document.getElementById('stickyBar');
+    const image = document.getElementById('image');
+    const navLInk = document.querySelector('.nav-link');
+    const navBar = document.querySelectorAll('.nav-links-items');
+    const navIcon = document.querySelectorAll('.nav-link i');
+
+    window.addEventListener('scroll', ()=> {
+      if (window.scrollY > 60) {
+        image.classList.add('resize');
+        navLInk.classList.add('color');
+        nav.classList.add('bg-white');
+        navBar.forEach(item => {
+          item.classList.add('color');
+        });
+        navIcon.forEach(icon => {
+        icon.classList.add('color');
+        });
+      }else{
+        navLInk.classList.remove('color');
+        image.classList.remove('resize');
+        nav.classList.remove('bg-white');
+        navBar.forEach(item => {
+          item.classList.remove('color');
+        });
+        navIcon.forEach(icon => {
+        icon.classList.remove('color');
+        });
+      }
+    });
+  </script>
+  <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
